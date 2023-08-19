@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- --------bootstrap icon--------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- -------------background changer--------------- -->
+     
+        <div id="bgmchanger">
+            <span class="bgm" id="RebeccaPurple"  onclick="changeBG('#663399')"></span>
+            <span class="bgm" id="Salmon"  onclick="changeBG('#FA8072')"></span>
+            <span class="bgm" id="DarkGray" onclick="changeBG('#A9A9A9')"></span>
+            <span class="bgm" id="Purple" onclick="changeBG('#800080')"></span>
+        </div>
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <p  id="sunil">Metre Sunil</p>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#services">Services</a></li> -->
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="bi bi-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="bi bi-list" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>I'm <span>Sunil</span> <br>Frontend <span>Developer</span></h1>
+                </div> 
+                
+            </div>   
+        </div>
+    
+    
+<!-- -----------about------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/img1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="p-justify">Seeking a challenging role and career-oriented job,to be a part of a tough team where i could apply my skills and knowledge to the best and participate in the growth of the organization  thus gaining experience & contributing with the emerging trends and latest technologies in the organization.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br>HyperText Markup Language </li>
+                            <li><span>CSS</span><br>Cascading Style Sheets</li>
+                            <li><span>JS/LIBRARY</span><br>JavaScript,React JS</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>abcdefgh</li>
+                            <li><span>2019 - 2021</span><br>abcdefgh.</li>
+                            <li><span>2017 - 2019</span><br>abcdefghi</li>
+                            <li><span>2016 - 2017</span><br>abcdefgh.</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (Computer Science and Engineering)</span><br>St.Mary's Integrated Campus (Hyderabad)</li>
+                            <li><span>Intermediate (Mathematics, Physics & Chemistry)</span><br>Sai Chaitanya Junior College (Dilsukhnagar,Hyderabad)</li>
+                            <li><span>SSLC (10th)</span><br>Seventh Day Adventist High School (Bidar,Karnataka)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------services----------- -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>abcdefghijk</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eos cupiditate voluptate nisi. Ratione, commodi delectus cupiditate voluptates necessitatibus enim, rerum officia inventore unde qui porro voluptatem totam nihil nemo!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-crop"></i>
+                    <h2>abcdefh</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eos cupiditate voluptate nisi. Ratione, commodi delectus cupiditate voluptates necessitatibus enim, rerum officia inventore unde qui porro voluptatem totam nihil nemo!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-app"></i>
+                    <h2>abcdefghi</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eos cupiditate voluptate nisi. Ratione, commodi delectus cupiditate voluptates necessitatibus enim, rerum officia inventore unde qui porro voluptatem totam nihil nemo!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ----------portfolio--------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/Travel-agency.png">
+                    <div class="layer">
+                        <h3>Travel Agency</h3>
+                        <p>The convenience of travelling: everything's aleady pre-arranged for you.</p>
+                        <a href="https://travel-agency-bay.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Expense-Tracker.png">
+                    <div class="layer">
+                        <h3>Expense Tracker</h3>
+                        <p>Useful in knowing the average amount of daily expenses.</p>
+                        <a href="https://expense-tracker-ebon-mu.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/stopwatch.png">
+                    <div class="layer">
+                        <h3>Stopwatch</h3>
+                        <p>Used to measure the time taken in sports events or any other activity.</p>
+                        <a href="https://stopwatch-psi-beige.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://vercel.com/dashboard" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!-- -------------contact-------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="bi bi-send"></i> sunilmetre40@gmail.com</p>
+                    <p> <i class="bi bi-telephone"></i> 8341034403</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/sunilmetre"><i class="bi bi-github"></i></a>
+                        <a href="mailto:sunilmetre40@gmail.com"> <i class="bi bi-envelope"></i> </a>
+                        <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/metre-sunil-441523285/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email " required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Checkout Some Others Projects too in my Github<i class="bi bi-heart-fill" id="heart"></i></p>
+        </div>
+    </div>
+
+
+    <!-- <script>
+
+        // ------------about--------
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+        // ----------------slidemenu-------------
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        // --------------contact form------------
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqoVx2uAgKGm0orVwK8D3qiE6kevz0hwbuzJXkHtmQ-2A11xayCluPBbbJ9Y3pjzMjzg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+
+
+    </script> -->
+ 
+    <!-- ------------bgm changer---------------- -->
+
+     <!-- <script>
+        function changeBG(color){
+            document.body.style.backgroundColor=color;
+        }
+    </script> -->
+
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
